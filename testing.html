@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print JS Array</title>
+  </head>
+  <body>
+    <h1>new paragraph..</h1>>
+    <div id="arrayImages"></div>
+  </body>
+
+
+
+  <script>
+    // Array of image file names
+    const images = ["1.png", "2.png"];
+    // Reference to the container for the images
+    const arrayImagesElement = document.getElementById("arrayImages");
+
+    // Function that creates HTMLImageElement instance
+    function createImageNode(fileName, atlText) {
+      // Learn more about the image element
+      // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+      // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
+      const img = new Image();
+
+      // when png images 1,2,3 exist on your machine/server, uncomment img.src = fileName;
+      //img.src = "https://i.giphy.com/media/QAsBwSjx9zVKoGp9nr/giphy.gif";
+      //img.alt = "A gif of Keanu Reeves";
+
+       img.src = "img/my_pic.jpg";
+       img.alt = "altText";
+
+      return img;
+    }
+
+    images.forEach(img => {
+      // For each file name in the 'images' array, create and append a new
+      // image node to the end of the list of children of <div id="arrayImages"></div>
+      // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+      arrayImagesElement.appendChild(createImageNode(img));
+    });
+  </script>
+
+
+
+</html>

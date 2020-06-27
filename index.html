@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: orange;}
+#Tests {background-color: brown;}
+#Contact {background-color: violet;}
+#Calculator {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'orange')"id="defaultOpen">Home" </button>
+<button class="tablink" onclick="openPage('Tests', this, 'brown')">Tests</button>
+<button class="tablink" onclick="openPage('Contact', this, 'violet')">Contact</button>
+<button class="tablink" onclick="openPage('Calculator', this, 'orange')">Calculator</button>
+<!--xxxxxxxxxxxxxxxxxHOMExxxxxxxxxxxxxxxxxxxxxxxx-->
+<div id="Home" class="tabcontent">
+  <h3>Kolshi w Kelashi</h3>
+  
+<img src="img/universe.png" alt="universe" style="float:right;width:600px;height:400px;"> 
+
+  <h4>Lecture # 1
+    Open a PDF file <a href="img/7.1_CRV_1.pdf">my_pdf_Lecture</a>. </h4>
+  
+  
+  <h4>Image Example: Open a image file <a href="img/my_pic.jpg">my_picture</a>.</h4> 
+<h4>Image Example: Open a image file <a href="img/Ali.jpg">Juju_picture</a>.</h4>
+<h4>Image Example: Open a image file <a href="img/juju.jpg">Ali_picture</a>.</h4>
+
+ <h4>Image Example: Open a image file <a href="img/zenoba.jpg">Zennoba_picture</a>.</h4>
+ <h4>Image Example: Open a image file <a href="img/Moe_family.jpg">Moe_picture</a>.</h4> 
+  <h4>Image Example: Open a image file <a href="img/Hassan.jpg">Hanan_picture</a>.</h4>  
+  <h4>mp3 Example: Open a audio file <a href="img/ya_ali_meded.mp3">Ya_Ali_Meded</a>.</h4>  
+  <h4>mp4 Example: Open a Video file <a href="img/Imam_Ali.mp4">Imam_Ali_pbuh</a>.</h4> 
+  </body>
+</div>
+<!--xxxxxxxxxxxxxxxxxTESTSxxxxxxxxxxxxxxxxxxxxxxxx-->
+<div id="Tests" class="tabcontent">
+  <h3>Tests</h3>
+    <p>Test # 1!
+      <a href="test_1.html">Go to the questions</a>
+    </p> 
+  
+    <p>Test # 2!
+      <a href="test_1.html">Go to the questions</a>
+    </p> 
+  
+    <p>Test # 3!
+      <a href="test_1.html">Go to the questions</a>
+    </p>  
+</div>
+<!--xxxxxxxxxxxxxxxxxContactxxxxxxxxxxxxxxxxxxxxxxxx-->
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, with Rida +7 705 671 xxxx.</p>
+   <a href="https://www.youtube.com/watch?v=QNZYBpLwc4g" target="_blank">my youtube video!</a> 
+  
+</div>
+<!--xxxxxxxxxxxxxxxxxCalculatorxxxxxxxxxxxxxxxxxxxxxxxx-->
+<div id="Calculator" class="tabcontent">
+  <h3>Calculator</h3>
+  <p>Try to add two numbers.</p>
+  <a href="calculator.html">Go to the calculator</a>
+
+</div>
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
