@@ -38,16 +38,16 @@ body, html {
 }
 
 #Home {background-color: orange;}
-#Tests {background-color: brown;}
-#Contact {background-color: violet;}
+#IGCSE_Math {background-color: brown;}
+# IGCSE_Phy{background-color: violet;}
 #Calculator {background-color: orange;}
 </style>
 </head>
 <body>
 
 <button class="tablink" onclick="openPage('Home', this, 'orange')"id="defaultOpen">Home" </button>
-<button class="tablink" onclick="openPage('Tests', this, 'brown')">Tests</button>
-<button class="tablink" onclick="openPage('Contact', this, 'violet')">Contact</button>
+<button class="tablink" onclick="openPage('IGCSE_Math', this, 'brown')">IGCSE_Math</button>
+<button class="tablink" onclick="openPage('IGCSE_Phy', this, 'violet')">IGCSE_Phy</button>
 <button class="tablink" onclick="openPage('Calculator', this, 'orange')">Calculator</button>
 <!--xxxxxxxxxxxxxxxxxHOMExxxxxxxxxxxxxxxxxxxxxxxx-->
 <div id="Home" class="tabcontent">
@@ -86,13 +86,8 @@ body, html {
    <a href="https://www.youtube.com/watch?v=QNZYBpLwc4g" target="_blank">my youtube video!</a> 
   
 </div>
-<!--xxxxxxxxxxxxxxxxxCalculatorxxxxxxxxxxxxxxxxxxxxxxxx-->
-<div id="Calculator" class="tabcontent">
-  <h3>Calculator</h3>
-  <p>Try to add two numbers.</p>
-  <a href="calculator.html">Go to the calculator</a>
 
-</div>
+
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
 function openPage(pageName,elmnt,color) {
