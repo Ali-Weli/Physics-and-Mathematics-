@@ -44,6 +44,7 @@ body, html {
 #Home {background-color: orange;}
 #IGCSE_Math {background-color: brown;}
 # IGCSE_Phy{background-color: violet;}
+ #Year_7_Math {background-color: brown;}
 </style>
 </head>
 <body>
@@ -51,6 +52,7 @@ body, html {
 <button class="tablink" onclick="openPage('Home', this, 'orange')"id="defaultOpen">Home" </button>
 <button class="tablink" onclick="openPage('IGCSE_Math', this, 'brown')">IGCSE_Math</button>
 <button class="tablink" onclick="openPage('IGCSE_Phy', this, 'violet')">IGCSE_Phy</button>
+<button class="tablink" onclick="openPage('Year_7_Math', this, 'brown')">IGCSE_Math</button>
   
   
 <!--xxxxxxxxxxxxxxxxxHOMExxxxxxxxxxxxxxxxxxxxxxxx-->
@@ -66,25 +68,18 @@ body, html {
 <!--xxxxxxxxxxxxxxxIGCSE_Mathxxxxxxxxxxxxxxxxxxxxxxx-->
 <div id="IGCSE_Math" class="tabcontent">
   <h3>IGCSE_Math</h3>
-    <p>Test # 1!
       <a href="IGCSE_Math.html">Go to the questions</a>
-    </p> 
-  
-    <p>Test # 2!
-      <a href="IGCSE_Math.html">Go to the questions</a>
-    </p> 
-  
-    <p>Test # 3!
-      <a href="IGCSE_Math.html">Go to the questions</a>
-    </p>  
 </div>
 
 <!--xxxxxxxxxxxxxxxIGCSE_Phyxxxxxxxxxxxxxxxxxxxxxxx-->
 <div id="IGCSE_Phy" class="tabcontent">
-  <h3>IGCSE_Math</h3>
-    
+  <h3>IGCSE_Phy</h3>
+      <a href="IGCSE_Phy.html">Go to the questions</a>
 </div>
-
+<div id="Year_7_Math" class="tabcontent">
+  <h3>IGCSE_Math</h3>
+      <a href="Year_7_Math.html">Go to the questions</a>
+</div>
 
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 <script>
@@ -120,14 +115,5 @@ document.getElementById("defaultOpen").click();
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h5 style="text-align:center;">Title of Button</h5>
-      
-     
-        <a href="IGCSE_Math.html">
-            <button class="btn btn-primary btn-lg">Click here</button>
-        </a>
-    </div>
-</body>
+
 </html> 
